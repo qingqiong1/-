@@ -16,9 +16,12 @@ class Solution1:
         max_sum = nums[0]
         # 循环，如果加入一个数当前子数组变小，子数组就重新开始，同时记录一个历史最大数组
         for num in nums:
-            cur = max(cur,cur+num)
+            cur = max(num,cur+num)
             max_sum = max(max_sum,cur)
         return max_sum
+
+nums = [-2,1,-3,4,-1,2,1,-5,4]
+print(Solution1().maxSubArray1(nums))
 # 分治法
 """
 递归的思想
