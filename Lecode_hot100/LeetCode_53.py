@@ -15,7 +15,7 @@ class Solution1:
         # 全局的最大数组
         max_sum = nums[0]
         # 循环，如果加入一个数当前子数组变小，子数组就重新开始，同时记录一个历史最大数组
-        for num in nums:
+        for num in nums[1:]:
             cur = max(num,cur+num)
             max_sum = max(max_sum,cur)
         return max_sum
