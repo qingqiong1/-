@@ -1,6 +1,7 @@
 # https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&envId=top-100-liked
 
 """
+两数之和
 通过哈希值存储已经搜索过的数【数值，索引】，看当前数的补数在哈希表里面是否存在
 """
 from typing import List
